@@ -1,0 +1,107 @@
+// Customize Bootstrap variables that get imported before the original Bootstrap variables.
+// Thus original Bootstrap variables can depend on values from here.
+
+
+// $font-family-sans-serif: 'OpenSans-Light', Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// // This path is relative to this file!
+// $fonts-url-path: '../fonts';
+
+// @font-face {
+//   font-family: 'OpenSans-Light';
+//   src: url('#{$fonts-url-path}/OpenSans-Light.ttf') format('truetype');
+// }
+
+// Other font size variables are based on this on, so this absolutely should go into the
+// pre-customizations.scss file.
+// $font-size-base: 16px;
+
+// Here is what is in the _variables.scss file of Bootstrap 3
+// $font-size-base:          14px !default;
+// $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+// $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+// If you're using a custom icon font path, specify it as follows
+// $icon-font-path: ../fonts // This path is relative to this file
+// $icon-font-name: 'glyphicons' // The name of the font you want to use
+// And be sure to set useCustomIconFontPath to true in .bootstraprc.
+
+$white:                  #fff !default;
+$black:                  #111 !default;
+$gray-base:              #111 !default;
+
+$gray:                   #767676;
+$gray-dark:              #444;
+$gray-border:            #ccc;
+$gray-hover:             #e9e9e9;
+$gray-hover-light:       #f0f0f0;
+$gray-background:        #F9F9F9;
+$gray-light:             #ccc;
+$gray-lighter:           #e9e9e9;
+
+$brand-default:         #838383 !default;
+$brand-primary:         #0695d6 !default;
+$brand-primary-alt:     #0a73ae !default;
+$brand-secondary:       #01bdf2 !default;
+$brand-complementary:   #ef4d3d !default;
+$brand-success:         #33b560 !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #fec221 !default;
+$brand-danger:          #ef4d3d !default;
+
+$brand-fucsia:          #ea1d76 !default;
+$brand-arandano:        #bd1e61 !default;
+$brand-uva:             #873299 !default;
+$brand-cielo:           #009dda !default;
+$brand-verdin:          #82bc00 !default;
+$brand-lima:            #cfde00 !default;
+$brand-maiz:            #ffce00 !default;
+$brand-tomate:          #ff4338 !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #F9F9F9 !default;
+//** Global text color on `<body>`.
+$text-color:            $gray-base !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      lighten($link-color, 15%) !default;
+//** Link hover decoration.
+$link-visited: #705582 !default;
+
+$dark-opacity: rgba(0, 0, 0, .5);
+$dark-opacity-IE: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+
+$shadow: 0 2px 2px rgba(0, 0, 0, .2);
+
+$font-family-serif: 'Droid Serif', serif;
+$font-family-sans-serif: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-size-base:          14px !default;
+
+
+//Dialogs
+
+$dialog-default-bg:               #FFFFFF;
+$dialog-default-border:           1px solid #CAD5E0;
+
+$dialog-primary-bg:               lighten($brand-primary, 50%);
+$dialog-primary-border:           1px solid lighten($brand-primary, 10%);
+
+$dialog-info-bg:                  lighten($brand-info, 35%);
+$dialog-info-border:              1px solid lighten($brand-info, 10%);
+
+$dialog-success-bg:               lighten($brand-success, 50%);
+$dialog-success-border:           1px solid lighten($brand-success, 10%);
+
+$dialog-danger-bg:                lighten($brand-danger, 35%);
+$dialog-danger-border:            1px solid lighten($brand-danger, 10%);
+
+$dialog-warning-bg:               lighten($brand-warning, 35%);
+$dialog-warning-border:           1px solid lighten($brand-warning, 10%);
+
+
